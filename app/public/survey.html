@@ -32,7 +32,7 @@
         <hr>
         <h3><strong>About You</strong></h3>
         
-        <form>
+        <form class="userInputForm">
           <div class="form-group">
             <label for="name">Name (Required)</label>
             <input type="text" id="name" class="form-control" required>
@@ -46,12 +46,12 @@
             <h3><strong>Question 1</strong></h3>
             <label for="q1">How much do you like to snuggle?</label>
                 <select class="form-control" id="q1">
-                  <option value=""></option>
-                  <option value="1">1 (Not at all)</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5 (A lot)</option>
+                  <option class="chosen-select" value=""></option>
+                  <option class="chosen-select" value="1">1 (Not at all)</option>
+                  <option class="chosen-select" value="2">2</option>
+                  <option class="chosen-select" value="3">3</option>
+                  <option class="chosen-select" value="4">4</option>
+                  <option class="chosen-select" value="5">5 (A lot)</option>
               </select>
           </div>
           <hr>
@@ -59,12 +59,12 @@
             <h3><strong>Question 2</strong></h3>
             <label for="q2">How nice would your friends say you are?</label>
               <select class="form-control" id="q2">
-                <option value=""></option>
-                <option value="1">1 (Not Very Nice)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Very Nice)</option>
+                <option class="chosen-select" value=""></option>
+                <option class="chosen-select" value="1">1 (Not Very Nice)</option>
+                <option class="chosen-select" value="2">2</option>
+                <option class="chosen-select" value="3">3</option>
+                <option class="chosen-select" value="4">4</option>
+                <option class="chosen-select" value="5">5 (Very Nice)</option>
               </select>
           </div>
           <hr>
@@ -72,12 +72,12 @@
             <h3><strong>Question 3</strong></h3>
             <label for="q3">How many dating apps are you currently on?</label>
               <select class="form-control" id="q3">
-                <option value=""></option>
-                <option value="1">0</option>
-                <option value="2">1-2</option>
-                <option value="3">3-5</option>
-                <option value="4">6-10</option>
-                <option value="5">10+</option>
+                <option class="chosen-select" value=""></option>
+                <option class="chosen-select" value="1">0</option>
+                <option class="chosen-select" value="2">1-2</option>
+                <option class="chosen-select" value="3">3-5</option>
+                <option class="chosen-select" value="4">6-10</option>
+                <option class="chosen-select" value="5">10+</option>
               </select>
           </div>
           <hr>
@@ -85,12 +85,12 @@
             <h3><strong>Question 4</strong></h3>
             <label for="q4">How creepy would your friends say you are?</label>
               <select class="form-control" id="q4">
-                <option value=""></option>
-                <option value="1">1 (Very Creepy)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Not Creepy at All)</option>
+                <option class="chosen-select" value=""></option>
+                <option class="chosen-select" value="1">1 (Very Creepy)</option>
+                <option class="chosen-select" value="2">2</option>
+                <option class="chosen-select" value="3">3</option>
+                <option class="chosen-select" value="4">4</option>
+                <option class="chosen-select" value="5">5 (Not Creepy at All)</option>
               </select>
           </div>
           <hr>
@@ -98,12 +98,12 @@
             <h3><strong>Question 5</strong></h3>
             <label for="q5">How old are you?</label>
               <select class="form-control" id="q5">
-                <option value=""></option>
-                <option value="1">21-30</option>
-                <option value="2">30-40</option>
-                <option value="3">40-50</option>
-                <option value="4">50-60</option>
-                <option value="5">60+</option>
+                <option class="chosen-select" value=""></option>
+                <option class="chosen-select" value="1">21-30</option>
+                <option class="chosen-select" value="2">30-40</option>
+                <option class="chosen-select" value="3">40-50</option>
+                <option class="chosen-select" value="4">50-60</option>
+                <option class="chosen-select" value="5">60+</option>
               </select>
           </div>
           <hr>
@@ -111,12 +111,12 @@
             <h3><strong>Question 6</strong></h3>
             <label for="q6">How snuggly are you?</label>
               <select class="form-control" id="q6">
-                <option value=""></option>
-                <option value="1">1 (as snuggly as a cactus)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (as snuggly as a teddybear)</option>
+                <option class="chosen-select" value=""></option>
+                <option class="chosen-select" value="1">1 (as snuggly as a cactus)</option>
+                <option class="chosen-select" value="2">2</option>
+                <option class="chosen-select" value="3">3</option>
+                <option class="chosen-select" value="4">4</option>
+                <option class="chosen-select" value="5">5 (as snuggly as a teddybear)</option>
               </select>
           </div>
           <br>
@@ -129,7 +129,7 @@
       
       <footer class="footer">
         <div class="container">
-          <p><a href="../data/friends.js">API Friends List</a> | <a href="https://github.com/jmacalaster/FriendFinder">GitHub Repo</a></p>
+          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jmacalaster/FriendFinder">GitHub Repo</a></p>
         </div>
       </footer>          
 
@@ -157,50 +157,33 @@
           
     <!-- Javascript   -->
       <script type="text/javascript">
-        var config = {
-          ".chosen-select": {},
-          ".chosen-select-deselect": {
-            allow_single_deselect: true
-          },
-          ".chosen-select-no-single": {
-            disable_search_threshold: 10
-          },
-          ".chosen-select-no-results": {
-            no_results_text: "Oops, nothing found!"
-          },
-          ".chosen-select-width": {
-            width: "95%"
-          }
-        };
-          
-        for (var selector in config) {
-          $(selector).chosen(config[selector]);
-        }
           
         // Capture the form inputs
         $("#submit").on("click", function(event) {
           event.preventDefault();
           
-        // Form validation
-          function validateForm() {
-            var isValid = true;
-              $(".form-control").each(function() {
-                if ($(this).val() === "") {
-                  isValid = false;
-                }
-              });
+        // // Form validation
+        //   function validateForm() {
+        //     var isValid = true;
+        //       $(".form-control").each(function() {
+        //         if ($(this).val() === "") {
+        //           isValid = false;
+        //         }
+        //       });
           
-            $(".chosen-select").each(function() {
-              if ($(this).val() === "") {
-                isValid = false;
-              }
-            });
-              return isValid;
-          }
+        //     $(".chosen-select").each(function() {
+        //       if ($(this).val() === "") {
+        //         isValid = false;
+        //       }
+        //     });
+        //       return isValid;
+        //       console.log(isValid);
+        //   }
           
   // If all required fields are filled
-          if (validateForm()) {
+          // if (validateForm()) {
   // Create an object for the user"s data
+
             var userData = {
               name: $("#name").val(),
               photo: $("#photo").val(),
@@ -213,22 +196,25 @@
                 $("#q6").val(),
               ]
             };
+            console.log(userData);
           
   // AJAX post the data to the friends API.
-            $.post("../data/friends.js", userData, function(data) {
+            $.post("/api/friends", userData, function(data) {
           
-  // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-              $("#match-name").text(data.name);
-              $("#match-img").attr("src", data.photo);
+  // // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+  //             $("#match-name").text(data.name);
+  //             $("#match-img").attr("src", data.photo);
   
-  // Show the modal with the best match
-              $("#results-modal").modal("toggle");
+  // // Show the modal with the best match
+  //             $("#results-modal").modal("toggle");
           
-            });
-          } else {
-            alert("Please fill out all fields before submitting!");
-          }
+  //           });
+  //         } else {
+  //           alert("Please fill out all fields before submitting!");
+  //         }
         });
+      });
+
       </script>
     
 </body>
